@@ -870,14 +870,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4640661291117471809, guid: 08ab90e37f2c27b49a84cc0ffba7034b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5434968419631867562, guid: 08ab90e37f2c27b49a84cc0ffba7034b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1258907990}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3681950161711266546, guid: 08ab90e37f2c27b49a84cc0ffba7034b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1781907031}
+    - targetCorrespondingSourceObject: {fileID: 3681950161711266546, guid: 08ab90e37f2c27b49a84cc0ffba7034b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1781907030}
   m_SourcePrefab: {fileID: 100100000, guid: 08ab90e37f2c27b49a84cc0ffba7034b, type: 3}
+--- !u!1 &1252078048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3681950161711266546, guid: 08ab90e37f2c27b49a84cc0ffba7034b, type: 3}
+  m_PrefabInstance: {fileID: 1252078047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1258907989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1116,6 +1128,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5434968419631867562, guid: 08ab90e37f2c27b49a84cc0ffba7034b, type: 3}
   m_PrefabInstance: {fileID: 1252078047}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781907030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252078048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519bf1c06bfa7c84ab763b4d177c9887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  invulnerableDuration: 2
+  blinkInterval: 0.1
+  state: 0
+  hearts: 0
+  maxHearts: 0
+--- !u!114 &1781907031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252078048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 139bb1069e3072d4b8bdde04c9367f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0.1
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
