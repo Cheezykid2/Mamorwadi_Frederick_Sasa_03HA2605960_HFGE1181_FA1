@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5434968419631867562}
   - component: {fileID: 1558906320372538149}
   - component: {fileID: 6574626646023443234}
-  - component: {fileID: 4640661291117471809}
   - component: {fileID: 6223540559619259968}
   m_Layer: 0
   m_Name: Player
@@ -101,25 +100,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4640661291117471809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3681950161711266546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a68c6a524e65c5546981b19608f3e035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  jumpForce: 3
-  groundCheck: {fileID: 3782408343267391349}
-  groundCheckRadius: 0.1
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!95 &6223540559619259968
 Animator:
   serializedVersion: 7
